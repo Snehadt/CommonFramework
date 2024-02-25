@@ -1,7 +1,10 @@
 package com.myProject.config.converterFactory;
 
 import com.myProject.config.configEnums.BrowserType;
+import com.myProject.config.configEnums.RunMode;
+import com.myProject.config.configEnums.RunModeType;
 import org.aeonbits.owner.Config;
+import org.checkerframework.checker.units.qual.K;
 
 @Config.LoadPolicy(Config.LoadType.MERGE)
 @Config.Sources({
@@ -14,4 +17,10 @@ public interface FrameworkConfig extends Config {
     @DefaultValue("CHROME")
     @ConverterClass(StringToBrowserConverter.class)
     BrowserType browser();
+
+    @Key("runMode")
+    RunMode runMode();
+
+    @Key("runmodeType")
+    RunModeType runModeType();
 }
