@@ -4,7 +4,9 @@ import com.myProject.config.configEnums.BrowserType;
 import com.myProject.config.configEnums.RunMode;
 import com.myProject.config.configEnums.RunModeType;
 import org.aeonbits.owner.Config;
-import org.checkerframework.checker.units.qual.K;
+
+
+import java.net.URL;
 
 @Config.LoadPolicy(Config.LoadType.MERGE)
 @Config.Sources({
@@ -23,4 +25,11 @@ public interface FrameworkConfig extends Config {
 
     @Key("runmodeType")
     RunModeType runModeType();
+
+    @Key("StringToURLConverter.class")
+    URL seleniumGridURL();
+
+    @Key("StringToURLConverter.class")
+    URL selenoidGridURL();
+
 }

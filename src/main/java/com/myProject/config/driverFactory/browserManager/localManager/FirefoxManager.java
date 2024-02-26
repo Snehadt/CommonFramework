@@ -1,8 +1,7 @@
-package com.myProject.config.driverFactory.browserManager;
+package com.myProject.config.driverFactory.browserManager.localManager;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public final class FirefoxManager {
