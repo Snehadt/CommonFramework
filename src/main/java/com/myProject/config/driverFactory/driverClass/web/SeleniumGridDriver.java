@@ -1,8 +1,8 @@
-package com.myProject.config.driverFactory.driverClass;
+package com.myProject.config.driverFactory.driverClass.web;
 
 import com.myProject.config.configEnums.BrowserType;
-import com.myProject.config.driverFactory.browserManager.seleniumGrid.SeleniumGridChromeManager;
-import com.myProject.config.driverFactory.browserManager.seleniumGrid.SeleniumGridFirefoxManager;
+import com.myProject.config.driverFactory.managers.browserManager.seleniumGrid.SeleniumGridChromeManager;
+import com.myProject.config.driverFactory.managers.browserManager.seleniumGrid.SeleniumGridFirefoxManager;
 import org.openqa.selenium.WebDriver;
 
 public final class SeleniumGridDriver {

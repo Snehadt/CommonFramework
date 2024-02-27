@@ -1,4 +1,4 @@
-package com.myProject.config.driverFactory.browserManager.seleniumGrid;
+package com.myProject.config.driverFactory.managers.browserManager.seleniumGrid;
 
 import com.myProject.config.configFactory.ConfigFactory;
 import org.openqa.selenium.WebDriver;
@@ -6,13 +6,12 @@ import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-public final class SeleniumGridFirefoxManager {
+public final class SeleniumGridChromeManager {
 
-    private SeleniumGridFirefoxManager(){}
-
-    public static WebDriver getDriver() {
+    private SeleniumGridChromeManager(){}
+    public static WebDriver getDriver(){
         DesiredCapabilities cap = new DesiredCapabilities();
-        cap.setBrowserName(BrowserType.FIREFOX);
+        cap.setBrowserName(BrowserType.CHROME);
         return new RemoteWebDriver(ConfigFactory.getConfig().seleniumGridURL(),cap);
     }
 }

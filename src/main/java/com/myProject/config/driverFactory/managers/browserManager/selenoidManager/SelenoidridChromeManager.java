@@ -1,4 +1,4 @@
-package com.myProject.config.driverFactory.browserManager.selenoidManager;
+package com.myProject.config.driverFactory.managers.browserManager.selenoidManager;
 
 import com.myProject.config.configFactory.ConfigFactory;
 import org.openqa.selenium.WebDriver;

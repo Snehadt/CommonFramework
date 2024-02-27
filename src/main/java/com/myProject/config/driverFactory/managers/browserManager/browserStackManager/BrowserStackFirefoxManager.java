@@ -1,18 +1,18 @@
-package com.myProject.config.driverFactory.browserManager.browserStackManager;
+package com.myProject.config.driverFactory.managers.browserManager.browserStackManager;
 
 import com.myProject.config.configFactory.BrowserStackConfigFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-public final class BrowserStackChromeManager {
+public final class BrowserStackFirefoxManager {
 
-    private BrowserStackChromeManager(){}
+    private BrowserStackFirefoxManager(){}
 
     public static WebDriver getDriver() {
         DesiredCapabilities cap = new DesiredCapabilities();
-        cap.setCapability("browser","chrome");
-        cap.setCapability("browser_version","121.0.6167");
+        cap.setCapability("browser","firefox");
+        cap.setCapability("browser_version","latest");
         cap.setCapability("os","Windows");
         cap.setCapability("os_version","10");
         return new RemoteWebDriver(BrowserStackConfigFactory.getConfig().browserStackURL(),cap);

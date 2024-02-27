@@ -1,4 +1,4 @@
-package com.myProject.config.driverFactory.browserManager.localManager;
+package com.myProject.config.driverFactory.managers.browserManager.localManager;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;

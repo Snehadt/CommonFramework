@@ -1,8 +1,8 @@
-package com.myProject.config.driverFactory.driverClass;
+package com.myProject.config.driverFactory.driverClass.web;
 
 import com.myProject.config.configEnums.BrowserType;
-import com.myProject.config.driverFactory.browserManager.selenoidManager.SelenoidGridFirefoxManager;
-import com.myProject.config.driverFactory.browserManager.selenoidManager.SelenoidridChromeManager;
+import com.myProject.config.driverFactory.managers.browserManager.selenoidManager.SelenoidGridFirefoxManager;
+import com.myProject.config.driverFactory.managers.browserManager.selenoidManager.SelenoidridChromeManager;
 import org.openqa.selenium.WebDriver;
 
 public final class SelenoidDriver {
